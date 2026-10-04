@@ -3,6 +3,16 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
+	scripts: [
+		{
+			src: 'https://www.googletagmanager.com/gtag/js?id=G-5YGHKN7JY2',
+			async: true,
+		},
+		{
+			src: '/ga.js',
+		},
+	],
+
 	title: 'Amichain doc',
 	tagline: 'Amichain documentation',
 	favicon: 'img/favicon.png',
